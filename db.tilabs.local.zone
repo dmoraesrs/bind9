@@ -1,0 +1,19 @@
+$TTL    120
+@           IN  SOA     ns1.tilabs.local.  root.tilabs.local. (
+            2021041416      ; Serial
+            60            ; Refresh
+            60             ; Retry
+            120          ; Expire
+            120           ; Negative Cache TTL
+)
+
+                IN      A       192.168.1.70
+                IN      NS      ns1.tilabs.local.
+                IN      MX 5    mx01.tilabs.local.
+                IN      MX 5    mx03.tilabs.local.
+                IN      MX 25    mx02.tilabs.local.
+
+ns1             IN      A       192.168.1.70
+ftp             IN      CNAME   ns1.tilabs.local.
+www             IN      CNAME   ns1.tilabs.local.
+ww2             IN      CNAME   ns1.tilabs.local.
